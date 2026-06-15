@@ -35,28 +35,28 @@ export default function App() {
         </div>
 
         {/* Nav pill – always visible */}
-        <div className="flex liquid-glass items-center gap-0 sm:gap-1 rounded-lg sm:rounded-xl px-1 sm:px-2 py-1 sm:py-2">
+        <div className="flex liquid-glass items-center gap-0 sm:gap-1 rounded-md sm:rounded-xl px-0.5 sm:px-2 py-0.5 sm:py-2">
           {navLinks.map((link) => (
             <button
               key={link.label}
-              className={`flex items-center gap-0.5 px-1.5 sm:px-3 py-1 sm:py-1.5 rounded-md text-[10px] sm:text-sm transition-colors whitespace-nowrap ${
+              className={`flex items-center gap-0.5 px-1 sm:px-3 py-0.5 sm:py-1.5 rounded-sm sm:rounded-md text-[8px] sm:text-sm transition-colors whitespace-nowrap ${
                 link.active
                   ? 'bg-white/15 text-white'
                   : 'text-white/70 hover:text-white'
               }`}
             >
               {link.label}
-              {link.dropdown && <ChevronDown size={10} className="sm:w-[13px] sm:h-[13px] mt-px" />}
+              {link.dropdown && <ChevronDown size={8} className="sm:w-[13px] sm:h-[13px] mt-px" />}
             </button>
           ))}
         </div>
 
         {/* CTAs – always visible */}
-        <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
-          <button className="liquid-glass text-white text-[10px] sm:text-sm font-medium px-2.5 sm:px-4 py-1.5 sm:py-2.5 rounded-full hover:bg-white/5 active:bg-white/10 transition-colors whitespace-nowrap">
+        <div className="flex items-center gap-1 sm:gap-3 shrink-0">
+          <button className="liquid-glass text-white text-[8px] sm:text-sm font-medium px-2 sm:px-4 py-1 sm:py-2.5 rounded-full hover:bg-white/5 active:bg-white/10 transition-colors whitespace-nowrap">
             Log in
           </button>
-          <button className="bg-white text-black text-[10px] sm:text-sm font-medium px-2.5 sm:px-4 py-1.5 sm:py-2.5 rounded-full hover:bg-white/90 active:bg-white/80 transition-colors whitespace-nowrap">
+          <button className="bg-white text-black text-[8px] sm:text-sm font-medium px-2 sm:px-4 py-1 sm:py-2.5 rounded-full hover:bg-white/90 active:bg-white/80 transition-colors whitespace-nowrap">
             Begin Now
           </button>
         </div>
@@ -71,12 +71,13 @@ export default function App() {
           Take charge of how you feel with a companion built for your
           journey—build routines, follow your growth, and unlock tailored
           insights for a steadier, more vibrant life each day.
+          Founded by David Olukayode.
         </p>
-        <div className="flex flex-row flex-wrap items-center gap-2 sm:gap-3">
-          <button className="bg-white text-black text-xs sm:text-base font-medium px-4 sm:px-7 py-2 sm:py-3 rounded-full hover:bg-white/90 active:bg-white/80 transition-colors">
+        <div className="flex flex-row flex-wrap items-center gap-1.5 sm:gap-3">
+          <button className="bg-white text-black text-[10px] sm:text-base font-medium px-3 sm:px-7 py-1.5 sm:py-3 rounded-full hover:bg-white/90 active:bg-white/80 transition-colors">
             Start Today
           </button>
-          <button className="liquid-glass text-white text-xs sm:text-base font-medium px-4 sm:px-7 py-2 sm:py-3 rounded-full hover:bg-white/5 active:bg-white/10 transition-colors">
+          <button className="liquid-glass text-white text-[10px] sm:text-base font-medium px-3 sm:px-7 py-1.5 sm:py-3 rounded-full hover:bg-white/5 active:bg-white/10 transition-colors">
             Discover How
           </button>
         </div>
