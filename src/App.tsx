@@ -33,7 +33,7 @@ export default function App() {
     <div className="relative w-full h-[100dvh] overflow-hidden">
       {/* ── Background Video ── */}
       <video
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-center"
         autoPlay
         muted
         loop
