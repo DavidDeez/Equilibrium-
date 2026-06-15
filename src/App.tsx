@@ -51,12 +51,12 @@ export default function App() {
           ))}
         </div>
 
-        {/* CTAs – always visible */}
-        <div className="flex items-center gap-1 sm:gap-3 shrink-0">
-          <button className="liquid-glass text-white text-[8px] sm:text-sm font-medium px-2 sm:px-4 py-1 sm:py-2.5 rounded-full hover:bg-white/5 active:bg-white/10 transition-colors whitespace-nowrap">
+        {/* CTAs – always visible, stacked on mobile */}
+        <div className="flex flex-col-reverse sm:flex-row items-center gap-0.5 sm:gap-3 shrink-0">
+          <button className="liquid-glass text-white text-[8px] sm:text-sm font-medium px-2 sm:px-4 py-0.5 sm:py-2.5 rounded-full hover:bg-white/5 active:bg-white/10 transition-colors whitespace-nowrap">
             Log in
           </button>
-          <button className="bg-white text-black text-[8px] sm:text-sm font-medium px-2 sm:px-4 py-1 sm:py-2.5 rounded-full hover:bg-white/90 active:bg-white/80 transition-colors whitespace-nowrap">
+          <button className="bg-white text-black text-[8px] sm:text-sm font-medium px-2 sm:px-4 py-0.5 sm:py-2.5 rounded-full hover:bg-white/90 active:bg-white/80 transition-colors whitespace-nowrap">
             Begin Now
           </button>
         </div>
@@ -70,8 +70,8 @@ export default function App() {
         <p className="text-white/60 text-[11px] sm:text-sm leading-relaxed mb-4 sm:mb-7 max-w-sm sm:max-w-md">
           Take charge of how you feel with a companion built for your
           journey—build routines, follow your growth, and unlock tailored
-          insights for a steadier, more vibrant life each day.
-          Founded by David Olukayode.
+          insights for a steadier, more vibrant life each day.{' '}
+          <span className="text-white/80 font-bold">Founded by David Olukayode.</span>
         </p>
         <div className="flex flex-row flex-wrap items-center gap-1.5 sm:gap-3">
           <button className="bg-white text-black text-[10px] sm:text-base font-medium px-3 sm:px-7 py-1.5 sm:py-3 rounded-full hover:bg-white/90 active:bg-white/80 transition-colors">
